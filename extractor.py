@@ -1,7 +1,7 @@
 import re
  
 try:
-    file =  open("[UPLOAD YOUR RAW SQL FILE]", "r",encoding='utf8')
+    file =  open("[UPLOAD YOUR RAW SQL FILE PATH]", "r",encoding='utf8')
     for line in file:
         lines = line.strip()
         emails = re.findall("[0-9a-zA-z]+@[0-9a-zA-z]+\.[0-9a-zA-z]+", lines)
