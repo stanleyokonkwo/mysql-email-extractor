@@ -6,7 +6,7 @@ try:
         lines = line.strip()
         emails = re.findall("[0-9a-zA-z]+@[0-9a-zA-z]+\.[0-9a-zA-z]+", lines)
       
-        savs =  open("CREATEFILE_FOR_SAVING ","a",encoding='utf8')
+        savs =  open("CREATEFILE_FOR_SAVING EXTRACTED EMAILS ","a",encoding='utf8')
         
         fil = savs.write("\n".join(emails))
         print(fil)
