@@ -6,12 +6,12 @@ try:
         lines = line.strip()
         emails = re.findall("[0-9a-zA-z]+@[0-9a-zA-z]+\.[0-9a-zA-z]+", lines)
       
-        savs =  open("[CREATEFILE_FOR_SAVING EXTRACTED EMAILS]","a",encoding='utf8')
+        newfile =  open("[CREATEFILE_FOR_SAVING EXTRACTED EMAILS]","a",encoding='utf8')
         
-        fil = savs.write("\n".join(emails))
-        print(fil)
-        savs.write("\n")
-        savs.close()
+        final_save = newfil.write("\n".join(emails))
+        print(final_save)
+        newfile.write("\n")
+        newfile.close()
     
 except FileNotFoundError as e:
     print(e)
